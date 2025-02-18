@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       GoRoute(
         path: '/question/:id',
         builder: (context, state) {
-          String questionId = state.pathParameters['id']!; // ✅ שינוי כאן
+          String questionId = state.pathParameters['id']!;  
           return QuestionDetailsScreen(questionId: questionId);
         },
       ),
